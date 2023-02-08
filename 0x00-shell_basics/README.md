@@ -1,1 +1,3 @@
-Script prints the absolute path of the file
+Script prints the current working directory\n
+Script lists all contents of the current directory\n
+
