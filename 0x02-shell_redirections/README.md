@@ -1,38 +1,123 @@
-Shell redirection
-File 0-current_working_directory prints the current working directory.
+## 0-hello_world
+Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
-File 1-listit displays the contents list of the current directory.
+## 1-confused_smiley
+Write a script that displays a confused smiley "(Ôo)'.
 
-File 2-bring_me_home changes the working directory to the user’s home directory.
+## 2-hellofile
+Display the content of the /etc/passwd file.
 
-File 3-listfiles displays current directory contents in a long format.
+## 3-twofiles
+Display the content of /etc/passwd and /etc/hosts
 
-File 4-listmorefiles displays current directory contents, including hidden files (starting with .).
+## 4-lastlines
+Display the last 10 lines of /etc/passwd
 
-File 5-listfilesdigitonly displays current directory contents in long format, with user and group IDs displayed numerically and hidden files.
+## 5-firstlines
+Display the first 10 lines of /etc/passwd
 
-File 6-firstdirectory creates a script that creates a directory named holberton in the /tmp/ directory.
+## 6-third_line
+Write a script that displays the third line of the file iacta.
 
-File 7-movethatfile moves the file betty from /tmp/ to /tmp/holberton.
++ The file iacta will be in the working directory
++ You’re not allowed to use sed
 
-File 8-firstdelete deletes he file betty.
+## 7-file
+Write a shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
 
-File 9-firstdirdeletion deletes the directory holberton that is in the /tmp directory.
+## 8-cwd_state
+Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
 
-File 10-back writes a script that changes the working directory to the previous one.
+## 9-duplicate_last_line
+Write a script that duplicates the last line of the file iacta
 
-File 11-lists writes a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
++ The file iacta will be in the working directory
 
-File 12-file_type writes a script that prints the type of the file named iamafile.
+## 10-no_more_js
+Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 
-File 13-symbolic_link creates a symbolic link to /bin/ls, named ls.
+## 11-directories
+Write a script that counts the number of directories and sub-directories in the current directory.
 
-File 14-copy_html creates a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
++ The current and parent directories should not be taken into account
++ Hidden directories should be counted
 
-File 15-lets_move creates a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
+## 12-newest_files
+Create a script that displays the 10 newest files in the current directory.
 
-File 16-clean_emacs creates a script that deletes all files in the current working directory that end with the character ~.
+### Requirements:
++ One file per line
++ Sorted from the newest to the oldest
 
-File 17-tree creates a script that creates the directories welcome/, welcome/to/ and welcome/to/holberton in the current directory.
+## 13-unique
+Create a script that takes a list of words as input and prints only words that appear exactly once.
 
-File 18-commas writes a command that lists all the files and directories of the current directory, separated by commas (,).
++ Input format: One line, one word
++ Output format: One line, one word
++ Words should be sorted
+
+## 14-findthatword
+Display lines containing the pattern “root” from the file /etc/passwd
+
+## 15-countthatword
+Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+
+## 16-whatsnext
+Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
+
+## 17-hidethisword
+Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
+
+## 18-letteronly
+Display all lines of the file /etc/ssh/sshd_config starting with a letter.
+
++ include capital letters as well
+
+## 19-AZ
+Replace all characters A and c from input to Z and e respectively.
+
+## 20-hiago
+Create a script that removes all letters c and C from input.
+
+## 21-reverse
+Write a script that reverse its input.
+
+## 22-users_and_homes
+Write a script that displays all users and their home directories, sorted by users.
+
++ Based on the the /etc/passwd file
+
+## 100-empty_casks
+**Write a command that finds all empty files and directories in the current directory and all sub-directories.**
+
++ Only the names of the files and directories should be displayed (not the entire path)
++ Hidden files should be listed
++ One file name per line
++ The listing should end with a new line
++ You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
+## 101-gifs
+**Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.**
+
++ Hidden files should be listed
++ Only regular files (not directories) should be listed
++ The names of the files should be displayed without their extensions
++ The files should be sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed 
+  before file a, and file Rona should be listed after file jay)
++ One file name per line
++ The listing should end with a new line
++ You are not allowed to use basename, grep, egrep, fgrep or rgrep
+
+## 102-acrostic
+An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval
+
+### Create a script that decodes acrostics that use the first letter of each line.
+
++ The ‘decoded’ message has to end with a new line
++ You are not allowed to use grep, egrep, fgrep or rgrep
+
+## 103-the_biggest_fan
+Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+
++ Order by number of requests, most active host or IP at the top
++ You are not allowed to use grep, egrep, fgrep or rgrep
