@@ -56,3 +56,56 @@ What are the section numbers for User commands, System calls and Library functio
 Keyboard Shortcuts for Bash
 Common shortcuts for Bash
 ```
+## 0x01. Shell, permissions
+
+### Permissions
+```
+What do the commands chmod, sudo, su, chown, chgrp do
+Linux file permissions
+How to represent each of the three sets of permissions (owner, group, and other) as a single digit
+How to change permissions, owner and group of a file
+Why can’t a normal user chown a file
+How to run a command with root privileges
+How to change user ID or become superuser
+```
+### Other Man Pages
+```
+How to create a user
+How to create a group
+How to print real and effective user and group IDs
+How to print the groups a user is in
+How to print the effective userid
+```
+
+## 0x03. Shell, init files, variables and expansions
+
+### Shell Initialization Files
+```
+What are the /etc/profile file and the /etc/profile.d directory
+What is the ~/.bashrc file
+```
+### Variables
+```
+What is the difference between a local and a global variable
+What is a reserved variable
+How to create, update and delete shell variables
+What are the roles of the following reserved variables: HOME, PATH, PS1
+What are special parameters
+What is the special parameter $??
+```
+### Expansions
+```
+What is expansion and how to use them
+What is the difference between single and double quotes and how to use them properly
+How to do command substitution with $() and backticks
+```
+### Shell Arithmetic
+```
+How to perform arithmetic operations with the shell
+The alias Command
+How to create an alias
+How to list aliases
+How to temporarily disable an alias
+Other help pages
+How to execute commands from a file in the current shell
+```
